@@ -1,6 +1,7 @@
 import AppBar from "./components/AppBar";
 import Home from "./pages/home";
 import * as S from "./styles";
+import { withAuthenticator } from '@aws-amplify/ui-react'
 
 function App() {
   return (
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
